@@ -11,11 +11,66 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
+  max-width: 900px;
 }
 
-footer {
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.5rem;
+}
+
+footer  {
   text-align: right;
   color: midnightblue;
 }
 
+span {
+  color: midnightblue;
+}
+
+
+@media (max-width: 600px) {
+  
+  img {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+}
+
+@media (min-width:601px)  {
+  
+  
+  .card {
+    display: inline-block;
+    width: 45%;
+  }
+  
+  img {
+    width: 250px;
+    float: left;
+    margin-right: 30px;
+  }
+  
+  
+  .right {
+    float: right;
+  }
+  
+  .left {
+    float: left;
+  }
+
+}
