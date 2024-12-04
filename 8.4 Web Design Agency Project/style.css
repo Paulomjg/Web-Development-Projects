@@ -32,8 +32,35 @@ span {
   color: midnightblue;
 }
 
+.card {
+  display: inline-block;
+  width: 45%;
+}
 
-@media (max-width: 600px) {
+img {
+  width: 250px;
+  float: left;
+  margin-right: 30px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+@media (max-width: 680px) {
+  
+  .logo {
+    width: 200px;
+  }
+  .card {
+    display: block;
+    width: 100%;
+    text-align: justify;
+  }
   
   img {
     width: 100%;
@@ -42,35 +69,6 @@ span {
 
   h1 {
     text-align: center;
-  }
-
-  p {
-    text-align: justify;
-  }
-
-}
-
-@media (min-width:601px)  {
-  
-  
-  .card {
-    display: inline-block;
-    width: 45%;
-  }
-  
-  img {
-    width: 250px;
-    float: left;
-    margin-right: 30px;
-  }
-  
-  
-  .right {
-    float: right;
-  }
-  
-  .left {
-    float: left;
   }
 
 }
