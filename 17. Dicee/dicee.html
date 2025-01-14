@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="button"><button onclick= 'rollDice()'><h1>Click here to Roll Dices</h1></button></div>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img id="img1" src="./images/dice1.png" />
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img id="img2" src="./images/dice1.png" />
+      </div>
+    </div>
+    
+
+    <footer>www 🎲 App Brewery 🎲 com</footer>
+
+    <script>
+      function rollDice() {
+        const dice1Value = Math.floor(Math.random() * 6) + 1;
+        const dice2Value = Math.floor(Math.random() * 6) + 1;
+
+        document.getElementById('img1').src = `./images/dice${dice1Value}.png`;
+        document.getElementById('img2').src = `./images/dice${dice2Value}.png`;
+
+        console.log(`Dado 1: ${dice1Value}, Dado 2: ${dice2Value}`);
+      }
+    </script>
+  </body>
+</html>
